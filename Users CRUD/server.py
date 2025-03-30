@@ -44,7 +44,7 @@ def delete_user(user_id):
   
     user = User.get_by_id(user_id)
     
-    # إذا وجدنا المستخدم نحذفه
+   
     User.delete(user_id)
     
     return redirect(url_for('read_all'))
