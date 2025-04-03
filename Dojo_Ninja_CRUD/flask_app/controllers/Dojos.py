@@ -11,7 +11,7 @@ def index():
 def dojo_show(dojo_id):
     dojo = Dojo.get_by_id(dojo_id)
     
-    # استيراد Ninja داخل الدالة لتجنب مشكلة الدوران في الاستيراد
+  
     from flask_app.models.Ninja import Ninja
     ninjas = Ninja.get_by_dojo(dojo_id)
     
